@@ -1,0 +1,18 @@
+
+Using cpu device
+Traceback (most recent call last):
+  File "c:/Users/UFMA/Documents/GitHub/qambo/mundo_fabril/treinamento.py", line 61, in <module>
+    train()
+  File "c:/Users/UFMA/Documents/GitHub/qambo/mundo_fabril/treinamento.py", line 52, in train
+    model.learn(total_timesteps=config.total_timesteps, callback=[checkpoint_callback, wandb_callback])
+  File "C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\dqn\dqn.py", line 273, in learn
+    progress_bar=progress_bar,
+  File "C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\common\off_policy_algorithm.py", line 319, in learn
+    log_interval=log_interval,
+  File "C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\common\off_policy_algorithm.py", line 559, in collect_rollouts
+    self._store_transition(replay_buffer, buffer_actions, new_obs, rewards, dones, infos)
+  File "C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\common\off_policy_algorithm.py", line 478, in _store_transition
+    infos,
+  File "C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\common\buffers.py", line 265, in add
+    self.timeouts[self.pos] = np.array([info.get("TimeLimit.truncated", False) for info in infos])
+TypeError: float() argument must be a string or a number, not 'dict'

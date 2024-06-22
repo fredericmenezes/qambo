@@ -1,0 +1,185 @@
+2024-06-22 15:47:57 INFO Running runs: []
+2024-06-22 15:47:58 INFO Agent received command: run
+2024-06-22 15:47:58 INFO Agent starting run with config:
+	batch_size: 32
+	buffer_size: 50000
+	exploration_final_eps: 0.04090950412802038
+	exploration_fraction: 0.4250597294076812
+	gamma: 0.9519485502039544
+	learning_rate: 0.0007345395228153574
+	policy_type: MlpPolicy
+	target_update_interval: 500
+	total_timesteps: 10000
+	train_freq: 16
+2024-06-22 15:47:58 INFO About to run command: python train.py --batch_size=32 --buffer_size=50000 --exploration_final_eps=0.04090950412802038 --exploration_fraction=0.4250597294076812 --gamma=0.9519485502039544 --learning_rate=0.0007345395228153574 --policy_type=MlpPolicy --target_update_interval=500 --total_timesteps=10000 --train_freq=16
+2024-06-22 15:48:03 INFO Running runs: ['qkdkhboc']
+2024-06-22 15:48:03 INFO Cleaning up finished run: qkdkhboc
+2024-06-22 15:48:03 INFO Agent received command: run
+2024-06-22 15:48:03 INFO Agent starting run with config:
+	batch_size: 128
+	buffer_size: 50000
+	exploration_final_eps: 0.05631635397948094
+	exploration_fraction: 0.4030734384366318
+	gamma: 0.9287081162396938
+	learning_rate: 0.0009744865465701564
+	policy_type: MlpPolicy
+	target_update_interval: 1000
+	total_timesteps: 10000
+	train_freq: 16
+2024-06-22 15:48:03 INFO About to run command: python train.py --batch_size=128 --buffer_size=50000 --exploration_final_eps=0.05631635397948094 --exploration_fraction=0.4030734384366318 --gamma=0.9287081162396938 --learning_rate=0.0009744865465701564 --policy_type=MlpPolicy --target_update_interval=1000 --total_timesteps=10000 --train_freq=16
+2024-06-22 15:48:08 INFO Running runs: ['odmt49av']
+2024-06-22 15:48:08 INFO Cleaning up finished run: odmt49av
+2024-06-22 15:48:09 INFO Agent received command: run
+2024-06-22 15:48:09 INFO Agent starting run with config:
+	batch_size: 128
+	buffer_size: 100000
+	exploration_final_eps: 0.05073777784023215
+	exploration_fraction: 0.13767469180249725
+	gamma: 0.921820831629232
+	learning_rate: 0.00026125051513764373
+	policy_type: MlpPolicy
+	target_update_interval: 2000
+	total_timesteps: 10000
+	train_freq: 16
+2024-06-22 15:48:09 INFO About to run command: python train.py --batch_size=128 --buffer_size=100000 --exploration_final_eps=0.05073777784023215 --exploration_fraction=0.13767469180249725 --gamma=0.921820831629232 --learning_rate=0.00026125051513764373 --policy_type=MlpPolicy --target_update_interval=2000 --total_timesteps=10000 --train_freq=16
+2024-06-22 15:48:14 INFO Running runs: ['95v78rb7']
+2024-06-22 15:48:14 ERROR Detected 3 failed runs in the first 60 seconds, shutting down.
+2024-06-22 15:48:14 INFO To disable this check set WANDB_AGENT_DISABLE_FLAPPING=true
+2024-06-22 15:50:42 INFO Running runs: []
+2024-06-22 15:50:42 INFO Agent received command: run
+2024-06-22 15:50:42 INFO Agent starting run with config:
+	batch_size: 32
+	buffer_size: 100000
+	exploration_final_eps: 0.030000567303816943
+	exploration_fraction: 0.24135598736084127
+	gamma: 0.9714848722108632
+	learning_rate: 0.0006620140061673728
+	policy_type: MlpPolicy
+	target_update_interval: 500
+	total_timesteps: 30000
+	train_freq: 8
+2024-06-22 15:50:42 INFO About to run command: python train.py --batch_size=32 --buffer_size=100000 --exploration_final_eps=0.030000567303816943 --exploration_fraction=0.24135598736084127 --gamma=0.9714848722108632 --learning_rate=0.0006620140061673728 --policy_type=MlpPolicy --target_update_interval=500 --total_timesteps=30000 --train_freq=8
+2024-06-22 15:50:47 INFO Running runs: ['35s68h10']
+2024-06-22 15:50:53 INFO Cleaning up finished run: 35s68h10
+2024-06-22 16:01:35 INFO Running runs: []
+2024-06-22 16:01:36 INFO Agent received command: run
+2024-06-22 16:01:36 INFO Agent starting run with config:
+	batch_size: 64
+	buffer_size: 100000
+	exploration_final_eps: 0.09413689060535166
+	exploration_fraction: 0.1387508941448244
+	gamma: 0.9365285215448956
+	learning_rate: 0.00028331699928800253
+	policy_type: MlpPolicy
+	target_update_interval: 2000
+	total_timesteps: 20000
+	train_freq: 4
+2024-06-22 16:01:36 INFO About to run command: python train.py --batch_size=64 --buffer_size=100000 --exploration_final_eps=0.09413689060535166 --exploration_fraction=0.1387508941448244 --gamma=0.9365285215448956 --learning_rate=0.00028331699928800253 --policy_type=MlpPolicy --target_update_interval=2000 --total_timesteps=20000 --train_freq=4
+2024-06-22 16:01:41 INFO Running runs: ['e8qocd37']
+2024-06-22 16:01:46 INFO Cleaning up finished run: e8qocd37
+2024-06-22 16:02:04 INFO Agent received command: run
+2024-06-22 16:02:04 INFO Agent starting run with config:
+	batch_size: 32
+	buffer_size: 50000
+	exploration_final_eps: 0.08195637274465419
+	exploration_fraction: 0.3595132937360219
+	gamma: 0.9114634014386468
+	learning_rate: 0.000872751287060942
+	policy_type: MlpPolicy
+	target_update_interval: 1000
+	total_timesteps: 30000
+	train_freq: 16
+2024-06-22 16:02:04 INFO About to run command: python train.py --batch_size=32 --buffer_size=50000 --exploration_final_eps=0.08195637274465419 --exploration_fraction=0.3595132937360219 --gamma=0.9114634014386468 --learning_rate=0.000872751287060942 --policy_type=MlpPolicy --target_update_interval=1000 --total_timesteps=30000 --train_freq=16
+2024-06-22 16:02:09 INFO Running runs: ['ss80lrsy']
+2024-06-22 16:02:19 INFO Cleaning up finished run: ss80lrsy
+2024-06-22 16:02:20 INFO Agent received command: run
+2024-06-22 16:02:20 INFO Agent starting run with config:
+	batch_size: 64
+	buffer_size: 100000
+	exploration_final_eps: 0.03415897995436151
+	exploration_fraction: 0.18176031876978313
+	gamma: 0.968464862600239
+	learning_rate: 0.0003591514075105641
+	policy_type: MlpPolicy
+	target_update_interval: 1000
+	total_timesteps: 10000
+	train_freq: 16
+2024-06-22 16:02:20 INFO About to run command: python train.py --batch_size=64 --buffer_size=100000 --exploration_final_eps=0.03415897995436151 --exploration_fraction=0.18176031876978313 --gamma=0.968464862600239 --learning_rate=0.0003591514075105641 --policy_type=MlpPolicy --target_update_interval=1000 --total_timesteps=10000 --train_freq=16
+2024-06-22 16:02:25 INFO Running runs: ['i4pebh2q']
+2024-06-22 16:02:35 INFO Cleaning up finished run: i4pebh2q
+2024-06-22 16:02:35 INFO Agent received command: run
+2024-06-22 16:02:35 INFO Agent starting run with config:
+	batch_size: 128
+	buffer_size: 100000
+	exploration_final_eps: 0.09375661811090402
+	exploration_fraction: 0.31376270754446833
+	gamma: 0.9119659171565772
+	learning_rate: 0.000197000361733832
+	policy_type: MlpPolicy
+	target_update_interval: 2000
+	total_timesteps: 20000
+	train_freq: 8
+2024-06-22 16:02:35 INFO About to run command: python train.py --batch_size=128 --buffer_size=100000 --exploration_final_eps=0.09375661811090402 --exploration_fraction=0.31376270754446833 --gamma=0.9119659171565772 --learning_rate=0.000197000361733832 --policy_type=MlpPolicy --target_update_interval=2000 --total_timesteps=20000 --train_freq=8
+2024-06-22 16:02:40 INFO Running runs: ['mtmakv57']
+2024-06-22 16:02:51 INFO Cleaning up finished run: mtmakv57
+2024-06-22 16:02:51 INFO Agent received command: run
+2024-06-22 16:02:51 INFO Agent starting run with config:
+	batch_size: 128
+	buffer_size: 50000
+	exploration_final_eps: 0.08748980678723794
+	exploration_fraction: 0.4165424516799968
+	gamma: 0.9561669280512524
+	learning_rate: 0.000996846596210028
+	policy_type: MlpPolicy
+	target_update_interval: 1000
+	total_timesteps: 10000
+	train_freq: 16
+2024-06-22 16:02:51 INFO About to run command: python train.py --batch_size=128 --buffer_size=50000 --exploration_final_eps=0.08748980678723794 --exploration_fraction=0.4165424516799968 --gamma=0.9561669280512524 --learning_rate=0.000996846596210028 --policy_type=MlpPolicy --target_update_interval=1000 --total_timesteps=10000 --train_freq=16
+2024-06-22 16:02:56 INFO Running runs: ['uxr3m76m']
+2024-06-22 16:03:07 ERROR Detected 5 failed runs in a row, shutting down.
+2024-06-22 16:03:07 INFO To change this value set WANDB_AGENT_MAX_INITIAL_FAILURES=val
+2024-06-22 16:05:29 INFO Running runs: []
+2024-06-22 16:05:29 INFO Agent received command: run
+2024-06-22 16:05:29 INFO Agent starting run with config:
+	batch_size: 64
+	buffer_size: 50000
+	exploration_final_eps: 0.0635191351969581
+	exploration_fraction: 0.2152546939467249
+	gamma: 0.9161086568746613
+	learning_rate: 0.0006192313033192251
+	policy_type: MlpPolicy
+	target_update_interval: 1000
+	total_timesteps: 20000
+	train_freq: 4
+2024-06-22 16:05:29 INFO About to run command: python train.py --batch_size=64 --buffer_size=50000 --exploration_final_eps=0.0635191351969581 --exploration_fraction=0.2152546939467249 --gamma=0.9161086568746613 --learning_rate=0.0006192313033192251 --policy_type=MlpPolicy --target_update_interval=1000 --total_timesteps=20000 --train_freq=4
+2024-06-22 16:05:34 INFO Running runs: ['d5t1my0m']
+2024-06-22 16:05:40 INFO Cleaning up finished run: d5t1my0m
+2024-06-22 16:05:46 INFO Agent received command: run
+2024-06-22 16:05:46 INFO Agent starting run with config:
+	batch_size: 64
+	buffer_size: 100000
+	exploration_final_eps: 0.09214664727875216
+	exploration_fraction: 0.24217315633609376
+	gamma: 0.916884603876688
+	learning_rate: 0.0007695104486282169
+	policy_type: MlpPolicy
+	target_update_interval: 500
+	total_timesteps: 10000
+	train_freq: 8
+2024-06-22 16:05:46 INFO About to run command: python train.py --batch_size=64 --buffer_size=100000 --exploration_final_eps=0.09214664727875216 --exploration_fraction=0.24217315633609376 --gamma=0.916884603876688 --learning_rate=0.0007695104486282169 --policy_type=MlpPolicy --target_update_interval=500 --total_timesteps=10000 --train_freq=8
+2024-06-22 16:10:27 INFO Running runs: []
+2024-06-22 16:10:28 INFO Agent received command: run
+2024-06-22 16:10:28 INFO Agent starting run with config:
+	batch_size: 128
+	buffer_size: 100000
+	exploration_final_eps: 0.03040443738702773
+	exploration_fraction: 0.12739109599055515
+	gamma: 0.9899125538932452
+	learning_rate: 7.501562361926456e-05
+	policy_type: MlpPolicy
+	target_update_interval: 500
+	total_timesteps: 20000
+	train_freq: 8
+2024-06-22 16:10:28 INFO About to run command: python train.py --batch_size=128 --buffer_size=100000 --exploration_final_eps=0.03040443738702773 --exploration_fraction=0.12739109599055515 --gamma=0.9899125538932452 --learning_rate=7.501562361926456e-05 --policy_type=MlpPolicy --target_update_interval=500 --total_timesteps=20000 --train_freq=8
+2024-06-22 16:10:33 INFO Running runs: ['b9rwucwo']
+2024-06-22 16:10:38 INFO Cleaning up finished run: b9rwucwo

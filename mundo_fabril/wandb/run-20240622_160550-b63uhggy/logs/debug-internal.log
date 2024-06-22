@@ -1,0 +1,42 @@
+2024-06-22 16:05:50,409 INFO    StreamThr :2548 [internal.py:wandb_internal():88] W&B internal server running at pid: 2548, started at: 2024-06-22 16:05:50.409570
+2024-06-22 16:05:50,410 DEBUG   HandlerThread:2548 [handler.py:handle_request():158] handle_request: status
+2024-06-22 16:05:50,419 INFO    WriterThread:2548 [datastore.py:open_for_write():87] open: C:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\wandb\run-20240622_160550-b63uhggy\run-b63uhggy.wandb
+2024-06-22 16:05:50,419 DEBUG   SenderThread:2548 [sender.py:send():379] send: header
+2024-06-22 16:05:50,535 DEBUG   SenderThread:2548 [sender.py:send():379] send: run
+2024-06-22 16:05:51,068 INFO    SenderThread:2548 [dir_watcher.py:__init__():211] watching files in: C:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\wandb\run-20240622_160550-b63uhggy\files
+2024-06-22 16:05:51,068 INFO    SenderThread:2548 [sender.py:_start_run_threads():1191] run started: b63uhggy with start time 1719083150.40957
+2024-06-22 16:05:51,073 DEBUG   HandlerThread:2548 [handler.py:handle_request():158] handle_request: check_version
+2024-06-22 16:05:51,073 DEBUG   SenderThread:2548 [sender.py:send_request():406] send_request: check_version
+2024-06-22 16:05:51,165 DEBUG   HandlerThread:2548 [handler.py:handle_request():158] handle_request: run_start
+2024-06-22 16:05:51,173 DEBUG   HandlerThread:2548 [system_info.py:__init__():26] System info init
+2024-06-22 16:05:51,174 DEBUG   HandlerThread:2548 [system_info.py:__init__():41] System info init done
+2024-06-22 16:05:51,174 INFO    HandlerThread:2548 [system_monitor.py:start():194] Starting system monitor
+2024-06-22 16:05:51,174 INFO    SystemMonitor:2548 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-22 16:05:51,174 INFO    HandlerThread:2548 [system_monitor.py:probe():214] Collecting system info
+2024-06-22 16:05:51,176 INFO    SystemMonitor:2548 [interfaces.py:start():188] Started cpu monitoring
+2024-06-22 16:05:51,176 DEBUG   HandlerThread:2548 [system_info.py:probe():152] Probing system
+2024-06-22 16:05:51,177 INFO    SystemMonitor:2548 [interfaces.py:start():188] Started disk monitoring
+2024-06-22 16:05:51,177 INFO    SystemMonitor:2548 [interfaces.py:start():188] Started memory monitoring
+2024-06-22 16:05:51,184 INFO    SystemMonitor:2548 [interfaces.py:start():188] Started network monitoring
+2024-06-22 16:05:51,185 DEBUG   HandlerThread:2548 [system_info.py:_probe_git():137] Probing git
+2024-06-22 16:05:51,237 DEBUG   HandlerThread:2548 [system_info.py:_probe_git():145] Probing git done
+2024-06-22 16:05:51,237 DEBUG   HandlerThread:2548 [system_info.py:probe():200] Probing system done
+2024-06-22 16:05:51,237 DEBUG   HandlerThread:2548 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.7.6', 'heartbeatAt': '2024-06-22T19:05:51.176652', 'startedAt': '2024-06-22T19:05:50.401546', 'docker': None, 'cuda': None, 'args': ('--batch_size=64', '--buffer_size=100000', '--exploration_final_eps=0.09214664727875216', '--exploration_fraction=0.24217315633609376', '--gamma=0.916884603876688', '--learning_rate=0.0007695104486282169', '--policy_type=MlpPolicy', '--target_update_interval=500', '--total_timesteps=10000', '--train_freq=8'), 'state': 'running', 'program': 'train.py', 'codePathLocal': 'train.py', 'codePath': 'mundo_fabril\\train.py', 'git': {'remote': 'https://github.com/MichaelAllen1966/qambo.git', 'commit': '3d73bafb984dbf2a6fca4df8537714ec4208301f'}, 'email': 'fredericmferreira@gmail.com', 'root': 'C:/Users/UFMA/Documents/GitHub/qambo', 'host': 'DESKTOP-PJM9OV3', 'username': 'UFMA', 'executable': 'c:\\users\\ufma\\anaconda3\\envs\\qambo\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2000.0, 'min': 0.0, 'max': 2000.0}, 'cpu_freq_per_core': [{'current': 2000.0, 'min': 0.0, 'max': 2000.0}], 'disk': {'/': {'total': 235.67480087280273, 'used': 207.1575698852539}}, 'memory': {'total': 15.696025848388672}}
+2024-06-22 16:05:51,237 INFO    HandlerThread:2548 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-22 16:05:51,237 INFO    HandlerThread:2548 [system_monitor.py:probe():227] Publishing system info
+2024-06-22 16:05:51,237 DEBUG   HandlerThread:2548 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-06-22 16:05:52,072 INFO    Thread-16 :2548 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\wandb\run-20240622_160550-b63uhggy\files\conda-environment.yaml
+2024-06-22 16:05:53,072 INFO    Thread-16 :2548 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\wandb\run-20240622_160550-b63uhggy\files\conda-environment.yaml
+2024-06-22 16:05:53,101 DEBUG   HandlerThread:2548 [system_info.py:_save_conda():224] Saving conda packages done
+2024-06-22 16:05:53,102 INFO    HandlerThread:2548 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-22 16:05:53,110 DEBUG   SenderThread:2548 [sender.py:send():379] send: files
+2024-06-22 16:05:53,110 INFO    SenderThread:2548 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-06-22 16:05:53,182 INFO    memory    :2548 [interfaces.py:monitor():138] Process proc.memory.rssMB has exited.
+2024-06-22 16:05:53,182 INFO    cpu       :2548 [interfaces.py:monitor():138] Process cpu has exited.
+2024-06-22 16:05:53,182 DEBUG   SystemMonitor:2548 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-22 16:05:53,183 DEBUG   SystemMonitor:2548 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-22 16:05:53,183 DEBUG   SystemMonitor:2548 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-22 16:05:53,183 DEBUG   SenderThread:2548 [sender.py:send():379] send: stats
+2024-06-22 16:05:53,921 INFO    wandb-upload_0:2548 [upload_job.py:push():130] Uploaded file C:\Users\UFMA\AppData\Local\Temp\tmpolrvb2vzwandb\5myzw9ku-wandb-metadata.json
+2024-06-22 16:05:54,079 INFO    Thread-16 :2548 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\wandb\run-20240622_160550-b63uhggy\files\wandb-metadata.json
+2024-06-22 16:05:55,185 INFO    MainThread:2548 [internal.py:handle_exit():75] Internal process exited

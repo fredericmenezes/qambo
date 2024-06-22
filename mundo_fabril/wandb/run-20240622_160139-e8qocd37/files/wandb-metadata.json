@@ -1,0 +1,56 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.7.6",
+    "heartbeatAt": "2024-06-22T19:01:39.684165",
+    "startedAt": "2024-06-22T19:01:39.009637",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--batch_size=64",
+        "--buffer_size=100000",
+        "--exploration_final_eps=0.09413689060535166",
+        "--exploration_fraction=0.1387508941448244",
+        "--gamma=0.9365285215448956",
+        "--learning_rate=0.00028331699928800253",
+        "--policy_type=MlpPolicy",
+        "--target_update_interval=2000",
+        "--total_timesteps=20000",
+        "--train_freq=4"
+    ],
+    "state": "running",
+    "program": "train.py",
+    "codePathLocal": "train.py",
+    "codePath": "mundo_fabril\\train.py",
+    "git": {
+        "remote": "https://github.com/MichaelAllen1966/qambo.git",
+        "commit": "3d73bafb984dbf2a6fca4df8537714ec4208301f"
+    },
+    "email": "fredericmferreira@gmail.com",
+    "root": "C:/Users/UFMA/Documents/GitHub/qambo",
+    "host": "DESKTOP-PJM9OV3",
+    "username": "UFMA",
+    "executable": "c:\\users\\ufma\\anaconda3\\envs\\qambo\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2000.0,
+        "min": 0.0,
+        "max": 2000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.0,
+            "min": 0.0,
+            "max": 2000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 235.67480087280273,
+            "used": 207.15542602539062
+        }
+    },
+    "memory": {
+        "total": 15.696025848388672
+    }
+}

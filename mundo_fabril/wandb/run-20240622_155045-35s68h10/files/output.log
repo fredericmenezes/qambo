@@ -1,0 +1,16 @@
+
+Using cpu device
+C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\common\vec_env\base_vec_env.py:74: UserWarning: The `render_mode` attribute is not defined in your environment. It will be set to None.
+  warnings.warn("The `render_mode` attribute is not defined in your environment. It will be set to None.")
+Traceback (most recent call last):
+  File "train.py", line 52, in <module>
+    train()
+  File "train.py", line 35, in train
+    verbose=1
+  File "C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\dqn\dqn.py", line 127, in __init__
+    support_multi_env=True,
+  File "C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\common\off_policy_algorithm.py", line 124, in __init__
+    supported_action_spaces=supported_action_spaces,
+  File "C:\Users\UFMA\AppData\Roaming\Python\Python37\site-packages\stable_baselines3\common\base_class.py", line 181, in __init__
+    f"The algorithm only supports {supported_action_spaces} as action spaces "
+AssertionError: The algorithm only supports (<class 'gymnasium.spaces.discrete.Discrete'>,) as action spaces but Discrete(25) was provided

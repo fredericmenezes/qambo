@@ -1,0 +1,58 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.7.6
+    cli_version: 0.17.2
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1719086060
+    t:
+      1:
+      - 1
+      - 55
+      2:
+      - 1
+      - 55
+      3:
+      - 2
+      - 19
+      - 23
+      4: 3.7.6
+      5: 0.17.2
+      8:
+      - 3
+      - 5
+      13: windows-amd64
+learning_rate:
+  desc: null
+  value: 0.0001
+buffer_size:
+  desc: null
+  value: 50000
+batch_size:
+  desc: null
+  value: 32
+gamma:
+  desc: null
+  value: 0.99
+exploration_fraction:
+  desc: null
+  value: 0.1
+exploration_final_eps:
+  desc: null
+  value: 0.02
+train_freq:
+  desc: null
+  value: 4
+target_update_interval:
+  desc: null
+  value: 1000
+policy_type:
+  desc: null
+  value: MlpPolicy
+total_timesteps:
+  desc: null
+  value: 10000

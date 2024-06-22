@@ -1,0 +1,45 @@
+{
+    "os": "Windows-10-10.0.19041-SP0",
+    "python": "3.7.6",
+    "heartbeatAt": "2024-06-22T19:54:20.990260",
+    "startedAt": "2024-06-22T19:54:20.180587",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "c:/Users/UFMA/Documents/GitHub/qambo/mundo_fabril/treinamento.py",
+    "codePathLocal": "mundo_fabril\\treinamento.py",
+    "codePath": "mundo_fabril\\treinamento.py",
+    "git": {
+        "remote": "https://github.com/MichaelAllen1966/qambo.git",
+        "commit": "3d73bafb984dbf2a6fca4df8537714ec4208301f"
+    },
+    "email": "fredericmferreira@gmail.com",
+    "root": "C:/Users/UFMA/Documents/GitHub/qambo",
+    "host": "DESKTOP-PJM9OV3",
+    "username": "UFMA",
+    "executable": "C:\\Users\\UFMA\\anaconda3\\envs\\qambo\\python.exe",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2000.0,
+        "min": 0.0,
+        "max": 2000.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2000.0,
+            "min": 0.0,
+            "max": 2000.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 235.67480087280273,
+            "used": 207.14988327026367
+        }
+    },
+    "memory": {
+        "total": 15.696025848388672
+    }
+}

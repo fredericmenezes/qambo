@@ -1,0 +1,1 @@
+{"mean_call_to_arrival": 17.237898603284496, "mean_assignment_to_arrival": 16.723524183210454, "demand_met": 1.0, "_timestamp": 1719086161.7696805, "_runtime": 101.58377051353455, "_step": 9999, "_wandb": {"runtime": 101}}

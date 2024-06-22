@@ -1,0 +1,29 @@
+2024-06-22 16:01:39,010 INFO    MainThread:7852 [wandb_setup.py:_flush():76] Current SDK version is 0.17.2
+2024-06-22 16:01:39,010 INFO    MainThread:7852 [wandb_setup.py:_flush():76] Configure stats pid to 7852
+2024-06-22 16:01:39,010 INFO    MainThread:7852 [wandb_setup.py:_flush():76] Loading settings from C:\Users\UFMA\.config\wandb\settings
+2024-06-22 16:01:39,010 INFO    MainThread:7852 [wandb_setup.py:_flush():76] Loading settings from C:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\wandb\settings
+2024-06-22 16:01:39,010 WARNING MainThread:7852 [wandb_setup.py:_flush():76] Unknown environment variable: WANDB_SERVICE
+2024-06-22 16:01:39,010 INFO    MainThread:7852 [wandb_setup.py:_flush():76] Loading settings from environment variables: {'entity': 'lacmor', 'project': 'ambulance-dispatch', 'sweep_id': 'v297a2v2', 'root_dir': 'C:\\Users\\UFMA\\Documents\\GitHub\\qambo\\mundo_fabril', 'run_id': 'e8qocd37', 'sweep_param_path': 'C:\\Users\\UFMA\\Documents\\GitHub\\qambo\\mundo_fabril\\wandb\\sweep-v297a2v2\\config-e8qocd37.yaml'}
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program_relpath': 'mundo_fabril\\train.py', 'program_abspath': 'C:\\Users\\UFMA\\Documents\\GitHub\\qambo\\mundo_fabril\\train.py', 'program': 'train.py'}
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_init.py:_log_setup():520] Logging user logs to C:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\wandb\run-20240622_160139-e8qocd37\logs\debug.log
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_init.py:_log_setup():521] Logging internal logs to C:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\wandb\run-20240622_160139-e8qocd37\logs\debug-internal.log
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_init.py:init():560] calling init triggers
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_init.py:init():568] wandb.init called with sweep_config: {'batch_size': 64, 'buffer_size': 100000, 'exploration_final_eps': 0.09413689060535166, 'exploration_fraction': 0.1387508941448244, 'gamma': 0.9365285215448956, 'learning_rate': 0.00028331699928800253, 'policy_type': 'MlpPolicy', 'target_update_interval': 2000, 'total_timesteps': 20000, 'train_freq': 4}
+config: {}
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_init.py:init():610] starting backend
+2024-06-22 16:01:39,011 INFO    MainThread:7852 [wandb_init.py:init():614] setting up manager
+2024-06-22 16:01:39,016 INFO    MainThread:7852 [backend.py:_multiprocessing_setup():107] multiprocessing start_methods=spawn, using: spawn
+2024-06-22 16:01:39,017 INFO    MainThread:7852 [wandb_init.py:init():622] backend started and connected
+2024-06-22 16:01:39,026 INFO    MainThread:7852 [wandb_run.py:_config_callback():1382] config_cb None None {'batch_size': 64, 'buffer_size': 100000, 'exploration_final_eps': 0.09413689060535166, 'exploration_fraction': 0.1387508941448244, 'gamma': 0.9365285215448956, 'learning_rate': 0.00028331699928800253, 'policy_type': 'MlpPolicy', 'target_update_interval': 2000, 'total_timesteps': 20000, 'train_freq': 4}
+2024-06-22 16:01:39,027 INFO    MainThread:7852 [wandb_init.py:init():711] updated telemetry
+2024-06-22 16:01:39,055 INFO    MainThread:7852 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-06-22 16:01:39,575 INFO    MainThread:7852 [wandb_run.py:_on_init():2402] communicating current version
+2024-06-22 16:01:39,666 INFO    MainThread:7852 [wandb_run.py:_on_init():2411] got version response 
+2024-06-22 16:01:39,666 INFO    MainThread:7852 [wandb_init.py:init():795] starting run threads in backend
+2024-06-22 16:01:41,587 INFO    MainThread:7852 [wandb_run.py:_console_start():2380] atexit reg
+2024-06-22 16:01:41,587 INFO    MainThread:7852 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-06-22 16:01:41,587 INFO    MainThread:7852 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-06-22 16:01:41,587 INFO    MainThread:7852 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-06-22 16:01:41,589 INFO    MainThread:7852 [wandb_init.py:init():838] run started, returning control to user process

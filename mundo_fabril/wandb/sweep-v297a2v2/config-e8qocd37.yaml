@@ -1,0 +1,22 @@
+wandb_version: 1
+
+batch_size:
+  value: 64
+buffer_size:
+  value: 100000
+exploration_final_eps:
+  value: 0.09413689060535166
+exploration_fraction:
+  value: 0.1387508941448244
+gamma:
+  value: 0.9365285215448956
+learning_rate:
+  value: 0.00028331699928800253
+policy_type:
+  value: MlpPolicy
+target_update_interval:
+  value: 2000
+total_timesteps:
+  value: 20000
+train_freq:
+  value: 4

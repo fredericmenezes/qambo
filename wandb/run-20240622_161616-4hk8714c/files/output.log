@@ -1,0 +1,31 @@
+Traceback (most recent call last):
+  File "c:\Users\UFMA\anaconda3\envs\qambo\lib\site-packages\wandb\sdk\wandb_config.py", line 162, in __getattr__
+    return self.__getitem__(key)
+  File "c:\Users\UFMA\anaconda3\envs\qambo\lib\site-packages\wandb\sdk\wandb_config.py", line 130, in __getitem__
+    return self._items[key]
+KeyError: 'policy_type'
+The above exception was the direct cause of the following exception:
+Traceback (most recent call last):
+  File "c:\Users\UFMA\anaconda3\envs\qambo\lib\runpy.py", line 193, in _run_module_as_main
+    "__main__", mod_spec)
+  File "c:\Users\UFMA\anaconda3\envs\qambo\lib\runpy.py", line 85, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\UFMA\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher/../..\debugpy\__main__.py", line 39, in <module>
+    cli.main()
+  File "c:\Users\UFMA\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher/../..\debugpy/..\debugpy\server\cli.py", line 430, in main
+    run()
+  File "c:\Users\UFMA\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\adapter/../..\debugpy\launcher/../..\debugpy/..\debugpy\server\cli.py", line 284, in run_file
+    runpy.run_path(target, run_name="__main__")
+  File "c:\Users\UFMA\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 322, in run_path
+    pkg_name=pkg_name, script_name=fname)
+  File "c:\Users\UFMA\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 136, in _run_module_code
+    mod_name, mod_spec, pkg_name, script_name)
+  File "c:\Users\UFMA\.vscode\extensions\ms-python.debugpy-2024.6.0-win32-x64\bundled\libs\debugpy\_vendored\pydevd\_pydevd_bundle\pydevd_runpy.py", line 124, in _run_code
+    exec(code, run_globals)
+  File "c:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\train.py", line 52, in <module>
+    train()
+  File "c:\Users\UFMA\Documents\GitHub\qambo\mundo_fabril\train.py", line 25, in train
+    config.policy_type,
+  File "c:\Users\UFMA\anaconda3\envs\qambo\lib\site-packages\wandb\sdk\wandb_config.py", line 166, in __getattr__
+    ) from ke
+AttributeError: <class 'wandb.sdk.wandb_config.Config'> object has no attribute 'policy_type'

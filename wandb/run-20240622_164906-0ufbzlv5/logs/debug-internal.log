@@ -1,0 +1,205 @@
+2024-06-22 16:49:06,408 INFO    StreamThr :7568 [internal.py:wandb_internal():88] W&B internal server running at pid: 7568, started at: 2024-06-22 16:49:06.407396
+2024-06-22 16:49:06,408 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: status
+2024-06-22 16:49:06,410 INFO    WriterThread:7568 [datastore.py:open_for_write():87] open: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\run-0ufbzlv5.wandb
+2024-06-22 16:49:06,411 DEBUG   SenderThread:7568 [sender.py:send():379] send: header
+2024-06-22 16:49:06,439 DEBUG   SenderThread:7568 [sender.py:send():379] send: run
+2024-06-22 16:49:06,972 INFO    SenderThread:7568 [dir_watcher.py:__init__():211] watching files in: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files
+2024-06-22 16:49:06,972 INFO    SenderThread:7568 [sender.py:_start_run_threads():1191] run started: 0ufbzlv5 with start time 1719085746.407396
+2024-06-22 16:49:06,977 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: check_version
+2024-06-22 16:49:06,978 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: check_version
+2024-06-22 16:49:07,070 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: run_start
+2024-06-22 16:49:07,079 DEBUG   HandlerThread:7568 [system_info.py:__init__():26] System info init
+2024-06-22 16:49:07,080 DEBUG   HandlerThread:7568 [system_info.py:__init__():41] System info init done
+2024-06-22 16:49:07,080 INFO    HandlerThread:7568 [system_monitor.py:start():194] Starting system monitor
+2024-06-22 16:49:07,080 INFO    SystemMonitor:7568 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-06-22 16:49:07,080 INFO    HandlerThread:7568 [system_monitor.py:probe():214] Collecting system info
+2024-06-22 16:49:07,080 DEBUG   HandlerThread:7568 [system_info.py:probe():152] Probing system
+2024-06-22 16:49:07,082 INFO    SystemMonitor:7568 [interfaces.py:start():188] Started cpu monitoring
+2024-06-22 16:49:07,083 INFO    SystemMonitor:7568 [interfaces.py:start():188] Started disk monitoring
+2024-06-22 16:49:07,083 INFO    SystemMonitor:7568 [interfaces.py:start():188] Started memory monitoring
+2024-06-22 16:49:07,092 INFO    SystemMonitor:7568 [interfaces.py:start():188] Started network monitoring
+2024-06-22 16:49:07,092 DEBUG   HandlerThread:7568 [system_info.py:_probe_git():137] Probing git
+2024-06-22 16:49:07,145 DEBUG   HandlerThread:7568 [system_info.py:_probe_git():145] Probing git done
+2024-06-22 16:49:07,145 DEBUG   HandlerThread:7568 [system_info.py:probe():200] Probing system done
+2024-06-22 16:49:07,145 DEBUG   HandlerThread:7568 [system_monitor.py:probe():223] {'os': 'Windows-10-10.0.19041-SP0', 'python': '3.7.6', 'heartbeatAt': '2024-06-22T19:49:07.080409', 'startedAt': '2024-06-22T19:49:06.402396', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'c:/Users/UFMA/Documents/GitHub/qambo/mundo_fabril/treinamento.py', 'codePathLocal': 'mundo_fabril\\treinamento.py', 'codePath': 'mundo_fabril\\treinamento.py', 'git': {'remote': 'https://github.com/MichaelAllen1966/qambo.git', 'commit': '3d73bafb984dbf2a6fca4df8537714ec4208301f'}, 'email': 'fredericmferreira@gmail.com', 'root': 'C:/Users/UFMA/Documents/GitHub/qambo', 'host': 'DESKTOP-PJM9OV3', 'username': 'UFMA', 'executable': 'C:\\Users\\UFMA\\anaconda3\\envs\\qambo\\python.exe', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2000.0, 'min': 0.0, 'max': 2000.0}, 'cpu_freq_per_core': [{'current': 2000.0, 'min': 0.0, 'max': 2000.0}], 'disk': {'/': {'total': 235.67480087280273, 'used': 207.15081405639648}}, 'memory': {'total': 15.696025848388672}}
+2024-06-22 16:49:07,145 INFO    HandlerThread:7568 [system_monitor.py:probe():224] Finished collecting system info
+2024-06-22 16:49:07,145 INFO    HandlerThread:7568 [system_monitor.py:probe():227] Publishing system info
+2024-06-22 16:49:07,145 DEBUG   HandlerThread:7568 [system_info.py:_save_conda():210] Saving list of conda packages installed into the current environment
+2024-06-22 16:49:07,982 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\conda-environment.yaml
+2024-06-22 16:49:08,931 DEBUG   HandlerThread:7568 [system_info.py:_save_conda():224] Saving conda packages done
+2024-06-22 16:49:08,932 INFO    HandlerThread:7568 [system_monitor.py:probe():229] Finished publishing system info
+2024-06-22 16:49:08,939 DEBUG   SenderThread:7568 [sender.py:send():379] send: files
+2024-06-22 16:49:08,939 INFO    SenderThread:7568 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-06-22 16:49:08,989 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\conda-environment.yaml
+2024-06-22 16:49:08,989 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\wandb-metadata.json
+2024-06-22 16:49:09,050 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: python_packages
+2024-06-22 16:49:09,051 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: python_packages
+2024-06-22 16:49:09,051 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: stop_status
+2024-06-22 16:49:09,051 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-22 16:49:09,051 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: stop_status
+2024-06-22 16:49:09,059 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: partial_history
+2024-06-22 16:49:09,440 DEBUG   SenderThread:7568 [sender.py:send():379] send: telemetry
+2024-06-22 16:49:09,440 DEBUG   SenderThread:7568 [sender.py:send():379] send: telemetry
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,441 DEBUG   SenderThread:7568 [sender.py:send():379] send: config
+2024-06-22 16:49:09,442 DEBUG   SenderThread:7568 [sender.py:send():379] send: history
+2024-06-22 16:49:09,442 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: summary_record
+2024-06-22 16:49:09,443 INFO    SenderThread:7568 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-22 16:49:09,444 DEBUG   SenderThread:7568 [sender.py:send():379] send: exit
+2024-06-22 16:49:09,444 INFO    SenderThread:7568 [sender.py:send_exit():586] handling exit code: 1
+2024-06-22 16:49:09,444 INFO    SenderThread:7568 [sender.py:send_exit():588] handling runtime: 1
+2024-06-22 16:49:09,444 INFO    SenderThread:7568 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-22 16:49:09,444 INFO    SenderThread:7568 [sender.py:send_exit():594] send defer
+2024-06-22 16:49:09,444 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:09,445 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 0
+2024-06-22 16:49:09,445 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:09,445 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-06-22 16:49:09,445 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 1
+2024-06-22 16:49:09,445 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:09,445 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 1
+2024-06-22 16:49:09,445 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:09,445 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-06-22 16:49:09,445 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 2
+2024-06-22 16:49:09,445 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:09,445 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 2
+2024-06-22 16:49:09,445 INFO    HandlerThread:7568 [system_monitor.py:finish():203] Stopping system monitor
+2024-06-22 16:49:09,445 DEBUG   SystemMonitor:7568 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-06-22 16:49:09,446 INFO    HandlerThread:7568 [interfaces.py:finish():200] Joined cpu monitor
+2024-06-22 16:49:09,446 DEBUG   SystemMonitor:7568 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-06-22 16:49:09,446 INFO    HandlerThread:7568 [interfaces.py:finish():200] Joined disk monitor
+2024-06-22 16:49:09,446 DEBUG   SystemMonitor:7568 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-06-22 16:49:09,446 INFO    HandlerThread:7568 [interfaces.py:finish():200] Joined memory monitor
+2024-06-22 16:49:09,446 INFO    HandlerThread:7568 [interfaces.py:finish():200] Joined network monitor
+2024-06-22 16:49:09,447 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:09,447 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-06-22 16:49:09,447 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 3
+2024-06-22 16:49:09,447 DEBUG   SenderThread:7568 [sender.py:send():379] send: stats
+2024-06-22 16:49:09,447 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:09,447 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 3
+2024-06-22 16:49:09,447 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:09,447 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-06-22 16:49:09,447 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 4
+2024-06-22 16:49:09,447 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:09,447 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 4
+2024-06-22 16:49:09,447 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:09,447 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-06-22 16:49:09,447 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 5
+2024-06-22 16:49:09,447 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:09,447 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 5
+2024-06-22 16:49:09,448 DEBUG   SenderThread:7568 [sender.py:send():379] send: summary
+2024-06-22 16:49:09,448 INFO    SenderThread:7568 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-06-22 16:49:09,448 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:09,448 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-06-22 16:49:09,448 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 6
+2024-06-22 16:49:09,448 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:09,448 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 6
+2024-06-22 16:49:09,448 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:09,448 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-06-22 16:49:09,451 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: status_report
+2024-06-22 16:49:09,662 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 7
+2024-06-22 16:49:09,662 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:09,662 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 7
+2024-06-22 16:49:09,663 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:09,663 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-06-22 16:49:09,746 INFO    wandb-upload_0:7568 [upload_job.py:push():130] Uploaded file C:\Users\UFMA\AppData\Local\Temp\tmp94vgt7hkwandb\c1dj5hhi-wandb-metadata.json
+2024-06-22 16:49:10,002 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\config.yaml
+2024-06-22 16:49:10,002 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\output.log
+2024-06-22 16:49:10,002 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\wandb-summary.json
+2024-06-22 16:49:10,003 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_created():271] file/dir created: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\requirements.txt
+2024-06-22 16:49:10,080 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:49:12,020 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\output.log
+2024-06-22 16:49:13,475 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 8
+2024-06-22 16:49:13,475 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:49:13,476 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:13,476 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 8
+2024-06-22 16:49:13,476 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:13,476 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-06-22 16:49:13,476 INFO    SenderThread:7568 [job_builder.py:build():440] Attempting to build job artifact
+2024-06-22 16:49:13,476 INFO    SenderThread:7568 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-06-22 16:49:13,507 INFO    SenderThread:7568 [job_builder.py:build():545] adding wandb-job metadata file
+2024-06-22 16:49:13,516 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 9
+2024-06-22 16:49:13,517 DEBUG   SenderThread:7568 [sender.py:send():379] send: artifact
+2024-06-22 16:49:13,517 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:13,518 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 9
+2024-06-22 16:49:14,035 INFO    Thread-16 :7568 [dir_watcher.py:_on_file_modified():288] file/dir modified: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\output.log
+2024-06-22 16:49:14,111 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:49:15,030 INFO    wandb-upload_1:7568 [upload_job.py:push():88] Uploaded file C:\Users\UFMA\AppData\Local\Temp\tmpiqcymzbo\wandb-job.json
+2024-06-22 16:49:15,168 INFO    wandb-upload_0:7568 [upload_job.py:push():88] Uploaded file C:\Users\UFMA\AppData\Local\wandb\wandb\artifacts\staging\tmp7milttha
+2024-06-22 16:49:16,423 INFO    SenderThread:7568 [sender.py:send_artifact():1530] sent artifact job-https___github.com_MichaelAllen1966_qambo.git_mundo_fabril_treinamento.py - {'id': 'QXJ0aWZhY3Q6OTEyMTAxMTEw', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjIyMDkxNTg3Ng==', 'latestArtifact': None}}
+2024-06-22 16:49:16,423 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:16,423 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-06-22 16:49:16,423 INFO    SenderThread:7568 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-06-22 16:49:17,056 INFO    SenderThread:7568 [dir_watcher.py:finish():388] scan: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files
+2024-06-22 16:49:17,056 INFO    SenderThread:7568 [dir_watcher.py:finish():402] scan save: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\conda-environment.yaml conda-environment.yaml
+2024-06-22 16:49:17,056 INFO    SenderThread:7568 [dir_watcher.py:finish():402] scan save: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\config.yaml config.yaml
+2024-06-22 16:49:17,056 INFO    SenderThread:7568 [dir_watcher.py:finish():402] scan save: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\output.log output.log
+2024-06-22 16:49:17,059 INFO    SenderThread:7568 [dir_watcher.py:finish():402] scan save: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\requirements.txt requirements.txt
+2024-06-22 16:49:17,060 INFO    SenderThread:7568 [dir_watcher.py:finish():402] scan save: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\wandb-metadata.json wandb-metadata.json
+2024-06-22 16:49:17,060 INFO    SenderThread:7568 [dir_watcher.py:finish():402] scan save: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\wandb-summary.json wandb-summary.json
+2024-06-22 16:49:17,060 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 10
+2024-06-22 16:49:17,060 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:49:17,061 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:17,062 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 10
+2024-06-22 16:49:17,064 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:17,064 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-06-22 16:49:17,064 INFO    SenderThread:7568 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-22 16:49:17,132 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:49:17,132 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:49:17,533 INFO    wandb-upload_1:7568 [upload_job.py:push():130] Uploaded file C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\config.yaml
+2024-06-22 16:49:17,551 INFO    wandb-upload_2:7568 [upload_job.py:push():130] Uploaded file C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\conda-environment.yaml
+2024-06-22 16:49:17,795 INFO    wandb-upload_4:7568 [upload_job.py:push():130] Uploaded file C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\requirements.txt
+2024-06-22 16:49:17,798 INFO    wandb-upload_5:7568 [upload_job.py:push():130] Uploaded file C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\wandb-summary.json
+2024-06-22 16:49:17,844 INFO    wandb-upload_3:7568 [upload_job.py:push():130] Uploaded file C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\files\output.log
+2024-06-22 16:49:18,060 INFO    Thread-15 :7568 [sender.py:transition_state():614] send defer: 11
+2024-06-22 16:49:18,060 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:18,060 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 11
+2024-06-22 16:49:18,060 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:18,060 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-06-22 16:49:18,061 INFO    SenderThread:7568 [file_pusher.py:join():175] waiting for file pusher
+2024-06-22 16:49:18,061 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 12
+2024-06-22 16:49:18,061 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:18,061 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 12
+2024-06-22 16:49:18,061 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:18,061 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-06-22 16:49:18,061 INFO    SenderThread:7568 [file_stream.py:finish():601] file stream finish called
+2024-06-22 16:49:18,137 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:49:18,260 INFO    SenderThread:7568 [file_stream.py:finish():605] file stream finish is done
+2024-06-22 16:49:18,260 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 13
+2024-06-22 16:49:18,260 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:49:18,261 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:18,261 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 13
+2024-06-22 16:49:18,262 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:18,262 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-06-22 16:49:18,262 INFO    SenderThread:7568 [sender.py:transition_state():614] send defer: 14
+2024-06-22 16:49:18,262 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: defer
+2024-06-22 16:49:18,262 INFO    HandlerThread:7568 [handler.py:handle_request_defer():184] handle defer: 14
+2024-06-22 16:49:18,262 DEBUG   SenderThread:7568 [sender.py:send():379] send: final
+2024-06-22 16:49:18,262 DEBUG   SenderThread:7568 [sender.py:send():379] send: footer
+2024-06-22 16:49:18,262 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: defer
+2024-06-22 16:49:18,262 INFO    SenderThread:7568 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-06-22 16:49:18,263 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:49:18,263 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: server_info
+2024-06-22 16:49:18,263 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: poll_exit
+2024-06-22 16:49:18,263 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: get_summary
+2024-06-22 16:49:18,263 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: sampled_history
+2024-06-22 16:49:18,263 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:49:18,264 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: internal_messages
+2024-06-22 16:49:18,264 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: server_info
+2024-06-22 16:49:18,452 DEBUG   SenderThread:7568 [sender.py:send_request():406] send_request: poll_exit
+2024-06-22 16:49:18,453 INFO    MainThread:7568 [wandb_run.py:_footer_history_summary_info():3988] rendering history
+2024-06-22 16:49:18,453 INFO    MainThread:7568 [wandb_run.py:_footer_history_summary_info():4020] rendering summary
+2024-06-22 16:49:18,454 INFO    MainThread:7568 [wandb_run.py:_footer_sync_info():3947] logging synced files
+2024-06-22 16:49:18,455 DEBUG   HandlerThread:7568 [handler.py:handle_request():158] handle_request: shutdown
+2024-06-22 16:49:18,455 INFO    HandlerThread:7568 [handler.py:finish():882] shutting down handler
+2024-06-22 16:49:19,266 INFO    WriterThread:7568 [datastore.py:close():296] close: C:\Users\UFMA\Documents\GitHub\qambo\wandb\run-20240622_164906-0ufbzlv5\run-0ufbzlv5.wandb
+2024-06-22 16:49:19,453 INFO    SenderThread:7568 [sender.py:finish():1608] shutting down sender
+2024-06-22 16:49:19,453 INFO    SenderThread:7568 [file_pusher.py:finish():169] shutting down file pusher
+2024-06-22 16:49:19,453 INFO    SenderThread:7568 [file_pusher.py:join():175] waiting for file pusher
