@@ -22,9 +22,9 @@ def train():
     config.exploration_fraction = 0.1
     config.exploration_final_eps = 0.02
     config.train_freq = 4
-    config.target_update_interval = 1000
+    config.target_update_interval = 100
     config.policy_type = 'MlpPolicy'
-    config.total_timesteps = 10000
+    config.total_timesteps = 1000
 
     # Criar o ambiente
     env = DummyVecEnv([lambda: Monitor(Env())])

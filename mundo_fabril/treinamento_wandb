@@ -1,0 +1,238 @@
+import wandb
+import gymnasium as gym
+import numpy as np
+import pandas as pd
+from stable_baselines3 import DQN
+from stable_baselines3.common.vec_env import DummyVecEnv
+from stable_baselines3.common.monitor import Monitor
+from stable_baselines3.common.callbacks import CheckpointCallback
+from utils import WandbCallback
+from environment import Env
+import matplotlib.pyplot as plt
+
+# SIM PARAMETERS
+RANDOM_SEED = 42
+SIM_DURATION = 5000
+NUMBER_AMBULANCES = 3
+NUMBER_INCIDENT_POINTS = 1
+INCIDENT_RADIUS = 2
+NUMBER_DISPTACH_POINTS = 25
+AMBOWORLD_SIZE = 50
+INCIDENT_INTERVAL = 60
+EPOCHS = 2
+AMBO_SPEED = 60
+AMBO_FREE_FROM_HOSPITAL = False
+
+# Exploration rate (epsilon) is probability of choosing a random action
+EXPLORATION_MAX = 1.0
+EXPLORATION_MIN = 0.05
+# Reduction in epsilon with each game step
+EXPLORATION_DECAY = 0.9999
+
+def train():
+    # Inicializar o wandb
+    wandb.init(project="ambulance-dispatch")
+
+    # Configurações do experimento
+    config = wandb.config
+    config.learning_rate = 0.003
+    config.buffer_size = 50000
+    config.learning_starts = 200
+    config.batch_size = 32
+    config.gamma = 0.99
+    config.exploration_fraction = 0.1
+    config.exploration_final_eps = 0.02
+    config.train_freq = 4
+    config.target_update_interval = 100
+    config.policy_type = 'MlpPolicy'
+    config.total_timesteps = 1000
+
+    # Criar o ambiente
+    # env = DummyVecEnv([lambda: Monitor(Env(render_mode="human", render_env=False))])
+    env = Monitor(Env(render_mode="human", 
+                      render_env=False, 
+                      random_seed=RANDOM_SEED,
+                      duration_incidents=SIM_DURATION,
+                    #   number_ambulances=NUMBER_AMBULANCES,
+                    #   number_incident_points=NUMBER_INCIDENT_POINTS,
+                    #   number_epochs= EPOCHS,
+                    #   number_dispatch_points=NUMBER_DISPTACH_POINTS,
+                    #   incident_range=INCIDENT_RADIUS,
+                    #   max_size=AMBOWORLD_SIZE,
+                    #   ambo_kph=AMBO_SPEED,
+                    #   ambo_free_from_hospital=AMBO_FREE_FROM_HOSPITAL
+                      )
+                )
+
+    # Criar o modelo
+    model = DQN(
+        config.policy_type,
+        env,
+        learning_rate=config.learning_rate,
+        buffer_size=config.buffer_size,
+        batch_size=config.batch_size,
+        gamma=config.gamma,
+        exploration_fraction=config.exploration_fraction,
+        exploration_final_eps=config.exploration_final_eps,
+        train_freq=config.train_freq,
+        target_update_interval=config.target_update_interval,
+        verbose=1
+    )
+
+    # Configurar callbacks
+    checkpoint_callback = CheckpointCallback(save_freq=1000, save_path='./models/', name_prefix='dqn_model')
+    wandb_callback = WandbCallback()
+
+    # Variáveis para armazenar os resultados
+    results_run = []
+    results_exploration = []
+    results_score = []
+    results_mean_call_to_arrival = []
+    results_mean_assignment_to_arrival = []
+
+    # Treinar o modelo
+    model.learn(total_timesteps=config.total_timesteps, callback=[checkpoint_callback, wandb_callback])
+
+    # Avaliar o modelo
+    results = evaluate_model(model, env, "dqn_ambulance_dispatch_evaluation")
+
+    # # Adicionar resultados ao wandb
+    # wandb.log({
+    #     "results_run": float(np.mean(results["run"])),
+    #     "results_exploration": float(np.mean(results["exploration"])),
+    #     "results_score": float(np.mean(results["score"])),
+    #     "results_mean_call_to_arrival": float(np.mean(results["mean_call_to_arrival"])),
+    #     "results_mean_assignment_to_arrival": float(np.mean(results["mean_assignment_to_arrival"]))
+    # })
+
+    # Plotar os resultados e enviar para o wandb
+    plot_results(
+        results["run"],
+        results["exploration"],
+        results["score"],
+        results["mean_call_to_arrival"],
+        results["mean_assignment_to_arrival"],
+        "dqn_ambulance_dispatch_evaluation"
+    )
+
+    # Salvar o modelo final
+    model.save("dqn_ambulance_dispatch")
+
+    # Finalizar o wandb
+    wandb.finish()
+
+def evaluate_model(model, env, results_name):
+    """
+    Função para avaliar o modelo treinado.
+    """
+    print()
+    print('Test Model')
+    print('----------')
+
+    # Definir o modo de exploração para zero durante a avaliação
+    # model.exploration_rate = 0
+    # # Set starting exploration rate
+    # model.exploration_rate = EXPLORATION_MAX
+
+    # # Reduce exploration rate (exploration rate is stored in policy net)
+    # model.exploration_rate *= EXPLORATION_DECAY
+    # model.exploration_rate = max(EXPLORATION_MIN, 
+    #                                   model.exploration_rate)
+
+    # Dicionário para armazenar os resultados
+    results = {
+        "run": [],
+        "exploration": [],
+        "score": [],
+        "mean_call_to_arrival": [],
+        "mean_assignment_to_arrival": []
+    }
+
+    # Número de episódios de avaliação
+    num_episodes = 30
+
+    for episode in range(num_episodes):
+        # Resetar o ambiente
+        obs, info = env.reset()
+
+        # Variáveis para armazenar informações do episódio
+        done = False
+        episode_reward = 0
+
+        while not done:
+            # Selecionar a ação
+            action, _ = model.predict(obs, deterministic=True)
+
+            # Executar a ação
+            obs, reward, done, truncated, info = env.step(action)
+
+            # Acumular a recompensa
+            episode_reward += reward
+
+            if done:
+                print(f'Episode: {episode}, ', end='')
+                mean_assignment_to_arrival = np.mean(info['assignment_to_arrival'])
+                print(f'Mean assignment to arrival: {mean_assignment_to_arrival:4.1f}, ', end='')
+                mean_call_to_arrival = np.mean(info['call_to_arrival'])
+                print(f'Mean call to arrival: {mean_call_to_arrival:4.1f}, ', end='')
+                demand_met = info['fraction_demand_met']
+                print(f'Demand met: {demand_met:0.3f}')
+
+                # Adicionar aos resultados
+                results["run"].append(episode)
+                results["exploration"].append(model.exploration_rate)
+                results["score"].append(episode_reward)
+                results["mean_call_to_arrival"].append(mean_call_to_arrival)
+                results["mean_assignment_to_arrival"].append(mean_assignment_to_arrival)
+                
+                # Encerrar o loop do episódio
+                break
+
+    # Salvar resultados em um arquivo CSV
+    results_df = pd.DataFrame(results)
+    filename = './output/results_' + results_name + '.csv'
+    results_df.to_csv(filename, index=False)
+
+    # Exibir estatísticas descritivas dos resultados
+    print()
+    print(results_df.describe())
+
+    return results
+
+
+def plot_results(run, exploration, score, mean_call_to_arrival, mean_assignment_to_arrival, results_name):
+    """Plot and report results at end of run"""
+
+    # Set up chart (ax1 and ax2 share x-axis to combine two plots on one graph)
+    fig = plt.figure(figsize=(6,6))
+    ax1 = fig.add_subplot(111)
+    ax2 = ax1.twinx()
+
+    # Plot results
+    lns1 = ax1.plot(
+        run, exploration, label='exploration', color='g', linestyle=':')
+
+    lns2 = ax2.plot(run, mean_call_to_arrival,
+             label='call to arrival', color='r')
+    lns3 = ax2.plot(run, mean_assignment_to_arrival,
+             label='assignment to arrival', color='b', linestyle='--')
+
+    # Get combined legend
+    lns = lns1 + lns2 + lns3
+    labs = [l.get_label() for l in lns]
+    ax1.legend(lns, labs, loc='upper center', bbox_to_anchor=(0.5, -0.1), ncol=3)
+        
+    # Set axes
+    ax1.set_xlabel('run')
+    ax1.set_ylabel('exploration')
+    ax2.set_ylabel('Response time')
+    filename = 'output/' + results_name +'.png'
+    plt.savefig(filename, dpi=300)
+    plt.show()
+
+    # Log the figure to wandb
+    wandb.log({"results_plot": wandb.Image(fig)})
+
+
+if __name__ == "__main__":
+    train()

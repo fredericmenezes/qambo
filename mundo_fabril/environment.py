@@ -120,8 +120,9 @@ class Env(gym.Env):
 
     render
     """
+    metadata = {"render_modes": ["human"]}
 
-    def __init__(self, max_size=50, 
+    def __init__(self, max_size=50, render_mode=None,
                 number_ambulances=8,
                 number_dispatch_points=25,
                 number_epochs=2,
@@ -133,7 +134,7 @@ class Env(gym.Env):
                 random_seed=42,
                 incident_interval=20,
                 time_step=1,
-                render_env=False,
+                render_env=True,
                 print_output=False,
                 render_grid_size=25,
                 render_interval=10,
@@ -143,7 +144,7 @@ class Env(gym.Env):
         # Inherit from super class
         super(Env, self).__init__()
         # Set attributes
-
+        self.render_mode = render_mode
         self.action_number = int(number_dispatch_points)
         self.ambo_free_from_hospital = ambo_free_from_hospital
         self.ambo_speed = ambo_kph / 60
@@ -508,6 +509,9 @@ class Env(gym.Env):
         A = non-free ambulance
 
         """
+        if self.render_mode != "human":
+            return
+
         while True:
 
             # Delay between rendering environment
